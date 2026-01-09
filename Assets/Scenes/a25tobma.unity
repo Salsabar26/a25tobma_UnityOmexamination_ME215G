@@ -662,12 +662,13 @@ GameObject:
   m_Component:
   - component: {fileID: 987517975}
   - component: {fileID: 987517974}
-  - component: {fileID: 987517980}
   - component: {fileID: 987517979}
   - component: {fileID: 987517978}
   - component: {fileID: 987517977}
   - component: {fileID: 987517976}
   - component: {fileID: 987517981}
+  - component: {fileID: 987517982}
+  - component: {fileID: 987517983}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -761,7 +762,7 @@ MonoBehaviour:
   maxSpeed: 10
   jumpForce: 10
   spriteRenderer: {fileID: 987517974}
-  animator: {fileID: 0}
+  animator: {fileID: 987517982}
 --- !u!70 &987517977
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -862,20 +863,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &987517980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987517973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 48f2fd4e098ce254d8aa6704851dd6d1, type: 3}
 --- !u!114 &987517981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +993,42 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &987517982
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987517973}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ac5530c54e61504b91b620f1c58ae65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &987517983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987517973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b67c96d07153246ac3c594ba324a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tobbesPlayerAction: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  tobbesAnimator: {fileID: 987517982}
 --- !u!1 &1152459420
 GameObject:
   m_ObjectHideFlags: 0
